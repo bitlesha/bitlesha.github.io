@@ -1,0 +1,123 @@
+body {
+    font-family: Franklin Gothic Medium;
+    background-color: #2c0010
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #c40049;
+}
+
+.logo {
+    color: #ecdb4f;
+    font-size: 25px;
+    line-height: 60px;
+    padding-left: 388px;
+    float: left;
+}
+
+.menu {
+    float: left;
+    padding-left: 430px
+}
+
+.menu li {
+    float: left;
+    line-height: 60px;
+    color: #ecdb4f;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+.main {
+    width: 100%;
+    height: calc(640px - 60px);
+    background: url(../imj/gragas.png) 50% 150% no-repeat, url(../imj/background.jpg) no-repeat center/cover;
+
+}
+
+.title_container {
+    float: left;
+    color: #ecdb4f;
+    margin: 150px 0px 0px 300px;
+    text-align: center;
+
+}
+
+.title_container h1 {
+    font-size: 60px;
+    font-weight: bold
+}
+
+.title_container h4 {
+    color: #eee386;
+    font-size: 22px;
+    margin-top: 20px;
+
+}
+
+.title_container input {
+    padding: 0px 10px;
+    font-size: 20px;
+    color: #eee386;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    border: 3px solid #eee386;
+    border-radius: 5px;
+    background: none;
+    margin: 30px 14px 0px 14px
+}
+
+.about_me > p {
+    color: #f7dca2;
+    font-size: 22px;
+    padding: 10px 500px;
+
+}
+
+.about_me h2 {
+    font-size: 30px;
+    border-bottom: 5px solid red;
+    text-align: center;
+    margin: 100px 880px 100px 880px;
+    color: #f7dca2;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+
+}
+
+.about_me > img {
+    padding-left: 830px;
+}
+
+.about_me > input {
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: 3px solid #f7dca2;
+    margin: 15px 0px 50px 850px;
+    color: #f7dca2;
+    background: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 250px
+}
+
+.item_skills {
+    color: #f7dca2;
+    width: 100%;
+float: left;
+    background: url(../imj/drunkin%20doge.jpg) no-repeat center/cover
+}
+.item_skills h2{
+    text-align: center;
+    margin: 20px 850px 20px 850px;
+    font-size: 30px;
+    border-bottom: 5px  solid red;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
