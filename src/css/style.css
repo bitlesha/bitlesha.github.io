@@ -74,19 +74,20 @@ nav {
 
 .about_me > p {
     color: #f7dca2;
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px 500px;
 
 }
 
 .about_me h2 {
+    font-weight: bold;
     font-size: 30px;
     border-bottom: 5px solid red;
     text-align: center;
     margin: 100px 880px 100px 880px;
     color: #f7dca2;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
 }
 
@@ -107,17 +108,291 @@ nav {
     width: 250px
 }
 
-.item_skills {
-    color: #f7dca2;
+.item_skills_background {
+    background: url(../imj/drunkin%20doge.jpg) no-repeat center/cover;
     width: 100%;
-float: left;
-    background: url(../imj/drunkin%20doge.jpg) no-repeat center/cover
+    height: 523px;
+
 }
-.item_skills h2{
+
+.item_skills_background > h2 {
     text-align: center;
-    margin: 20px 850px 20px 850px;
-    font-size: 30px;
-    border-bottom: 5px  solid red;
+    color: #f7dca2;
+    margin: 0px 850px 100px 850px;
+    padding: 100px 0px 20px 0px;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 5px solid red;
+}
+
+.item_skills {
+    font-size: 16px;
+    float: left;
+    text-align: center;
+    color: #f7dca2;
+    padding-bottom: 100px;
+}
+
+.item_skills > img {
+    margin-left: 160px;
+    padding-bottom: 20px;
+}
+
+.item_skills > h3 {
+    margin-left: 160px;
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.bebe {
+    margin-left: 160px;
+}
+
+.byby {
+    margin-left: 160px;
+}
+
+.bubu {
+    margin-left: 160px;
+}
+
+.bobo {
+    margin-left: 160px;
+}
+
+.cases {
+    color: #f7dca2;
+    font-size: 20px;
+
+}
+
+.cases > h2 {
+    font-size: 30px;
+    border-bottom: 5px solid red;
+    text-align: center;
+    margin: 100px 860px 20px 860px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.cases > p {
+    text-align: center;
+    padding: 30px;
+}
+
+.cases > img {
+    margin-left: 360px;
+    padding-bottom: 15px;
+
+}
+
+.cases > h3 {
+    padding: 10px 0px 10px 360px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.cases > span {
+    padding: 10px 0px 10px 360px;
+}
+
+.cases > input {
+    border: 5px solid yellow;
+    background: yellow;
+    margin: 10px 0px 10px 360px;
+    text-align: center;
+    padding: 10px 20px;
+    color: #2c0010;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.project_name {
+    margin: -225px 0px 0px 300px;
+}
+
+.cost_calculation > h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 400px 0px 50px 0px;
+    margin-left: -360px;
+    text-transform: none
+}
+
+.cost_calculation {
+    color: #f7dca2;
+    font-size: 30px;
+    padding: 10px 0px 10px 360px;
+    text-transform: uppercase;
+}
+
+.cost_calculation > select {
+    border: 5px solid #370014;
+    background: #370014;
+    color: #f7dca2;
+    padding: 15px 900px 15px 0px;
+    margin-top: 10px
+}
+
+.time_cost {
+    text-transform: none;
+    border-top: 5px solid #370014;
+    margin: 10px 500px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.statistic_background {
+    background: url(../imj/bg_stats.png) no-repeat center/cover;
+    width: 100%;
+    height: 499px;
+    margin: 70px 0px
+}
+
+.statistic_background > h2 {
+    font-size: 30px;
+    color: #f7dca2;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+    border-bottom: 5px solid red;
+    margin: 0px 780px;
+
+
+}
+
+.statistic {
+    font-size: 20px;
+    color: #f7dca2;
+    float: left;
+    text-align: center;
+    padding: 50px 0px 10px 233px;
+    text-transform: uppercase
+}
+
+.statistic > h3 {
+    font-size: 30px;
+    padding: 15px 0px;
+}
+
+.feedbacks > h2 {
+    font-size: 30px;
+    color: #f7dca2;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 5px solid red;
+    padding-bottom: 20px;
+    margin: 30px 870px;
+}
+
+.feedbacks {
+    color: #f7dca2;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0px 200px 0px;
+}
+
+.feedbacks > img {
+    padding: 10px 0px;
+}
+
+.feedbacks > p {
+    padding: 10px 0px 30px 0px;
+}
+
+.contacts_bg > h2 {
+    font-size: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 5px solid red;
+    padding-bottom: 20px;
+    margin: 30px 830px;
+}
+
+.contacts_bg {
+    background: url(../imj/footer_bg.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 808px;
+    color: #2c0010;
+}
+
+.contacts_bg > p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.contacts_icons {
+    font-size: 18px;
+    float: left;
+    text-align: center;
+    color: #2c0010;
+    margin: 20px 0px 40px 335px;
+
+}
+
+.contacts_icons > img {
+    padding: 40px 0px;
+}
+
+.contacts > h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 230px 0px 30px 0px;
+}
+
+#name {
+    margin-left: 610px
+}
+
+.contacts_name_Email > input {
+    border: 5px solid #370014;
+    background: #370014;
+    color: #f7dca2;
+    margin: 10px 30px 20px 0px;
+    padding: 10px 176px 10px 0px;
+    opacity: 0.8;
+}
+
+.contacts_name_Email > textarea {
+    resize: none;
+    border: 5px solid #370014;
+    background: #370014;
+    color: #f7dca2;
+    margin-left: 610px;
+    padding-right: 330px;
+    opacity: 0.8;
+}
+
+.contacts > input {
+    text-align: center;
+    border: 5px solid #370014;
+    color: #370014;
+    background: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px 0px 0px 890px;
+    padding: 6px 20px;
+}
+
+.contacts_links {
+    float: left;
+    padding: 20px 0px 47px 310px
+}
+
+#leisters {
+   padding-left: 300px
+}
+#copyright{
+    width 100%;
+    height: 90px;
+    background: #c40049;
+    text-align: center;
+    line-height: 90px;
+    color: #ecdb4f;
+    font-size: 20px;
 }
