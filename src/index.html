@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <title>эээээээ ты чё сделал</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <div class="preloader">
-  <div class="preloader__image"></div>
-</div>
+        <div class="preloader__image"></div>
+    </div>
 
     <script>
         window.onload = function() {
@@ -28,42 +30,79 @@
 
     <header>
         <nav>
-            <div class="logo">ЛЁИ</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">обо мне</a></li>
-                    <li><a href="#">что я могу</a></li>
-                    <li><a href="#">кейсы</a></li>
-                    <li><a href="#">цена</a></li>
-                    <li><a href="#">отзывы</a></li>
-                    <li><a href="#">контакты</a></li>
-                </ul>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-3 col-7">
+                        <div class="logo">ЛЁИ</div>
+                    </div>
+                    <div class=" px-0 col-xxl-6 col-xl-6 col-lg-7 offset-xxl-4 offset-xl-4 offset-lg-2 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">обо мне</a></li>
+                                <li><a href="#">что я могу</a></li>
+                                <li><a href="#">кейсы</a></li>
+                                <li><a href="#">цена</a></li>
+                                <li><a href="#">отзывы</a></li>
+                                <li><a href="#">контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                открой меня
+                            </a>
 
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">что я могу</a></li>
+                                <li><a class="dropdown-item" href="#">кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">цена</a></li>
+                                <li><a class="dropdown-item" href="#">отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="main">
-            <div class="title_container">
-                <h1>Привет <br>я ЛЁИ</h1>
-                <h4>Фулл стек веб разработчик</h4>
-                <input type="button" value="обо мне">
-                <input type="button" value="чек работы">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6">
+                        <div class="title_container">
 
+                            <h1>Привет, я ЛЁИ</h1>
+                            <h4>Фулл стек веб разработчик</h4>
+                            <input type="button" value="обо мне">
+                            <input type="button" value="чек работы">
+
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
         </section>
         <div class="about_me">
-            <h2>обо мне</h2>
-            <img src="imj/png/face.png" alt="">
-
-
-
-            <p>Вначале было слово, но ЛЁИ его прорыгал.</p>
-            <p>Я начинающий фронтед-разарботчик с образованием сварщика/электрика. Опыта пока мало, однако я продвигаюсь вперед и мечтаю стать профи своего дела! </p>
-            <input type="submit" value="  скачать резюме">
-
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 offset-5">
+                        <h2>обо мне</h2>
+                    </div>
+                    <div class="text-center">
+                        <img src="imj/png/face.png" class="rounded" alt="">
+                    </div>
+                    <div class="col-8 offset-2">
+                        <p>Вначале было слово, но ЛЁИ его прорыгал.</p>
+                        <p>Я начинающий фронтед-разарботчик с образованием сварщика/электрика. Опыта пока мало, однако я продвигаюсь вперед и мечтаю стать профи своего дела! </p>
+                    </div>
+                    <input type="submit"  value="скачать резюме">
+                </div>
+            </div>
         </div>
         <div class="item_skills_background">
             <h2>что я умею</h2>
@@ -268,6 +307,7 @@
         </div>
 
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
