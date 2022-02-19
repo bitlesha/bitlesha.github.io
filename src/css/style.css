@@ -1,37 +1,45 @@
+@font-face {
+    font-family: 'frankling';
+    src: url('../fonts/framd.eot');
+    src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: Franklin Gothic Medium;
+    font-family: 'frankling', sans-serif;
     background-color: #2c0010
 }
 
 .preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  background: #e51c23;
-  z-index: 1001;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #e51c23;
+    z-index: 1001;
 }
 
 .preloader__image {
-  position: relative;
-  top: 45%;
-  left: 50%;
-  width: 128px;
-  height: 128px;
-  margin-top: -32px;
-  margin-left: -32px;
-  background: url(../imj/gif/load.gif) no-repeat 50% 50%; 
+    position: relative;
+    top: 45%;
+    left: 50%;
+    width: 128px;
+    height: 128px;
+    margin-top: -32px;
+    margin-left: -32px;
+    background: url(../imj/gif/load.gif) no-repeat 50% 50%;
 }
 
 .loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
+    transition: 0.3s opacity;
+    opacity: 0;
 }
 
 .loaded .preloader {
-  display: none;
+    display: none;
 }
 
 nav {
@@ -46,7 +54,7 @@ nav {
     color: #ecdb4f;
     font-size: 25px;
     line-height: 60px;
-    padding-left: 388px;
+   
     float: left;
     -webkit-animation: comming 2s;
     -o-animation: comming 2s;
@@ -56,7 +64,7 @@ nav {
 
 .menu {
     float: left;
-    padding-left: 430px
+    
 }
 
 .menu li {
@@ -64,7 +72,7 @@ nav {
     line-height: 60px;
     color: #ecdb4f;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 11px;
     text-transform: uppercase;
     -webkit-animation: falling 2s forwards;
     -o-animation: falling 2s forwards;
@@ -82,17 +90,18 @@ nav {
 .title_container {
     float: left;
     color: #ecdb4f;
-    margin: 150px 0px 0px 300px;
     text-align: center;
+    width: 100%;
 
 }
 
 .title_container h1 {
-    font-size: 60px;
+    font-size: 72px;
     font-weight: bold;
     -webkit-animation: title 1.5s;
     -o-animation: title 1.5s;
     animation: title 1.5s;
+    
 
 
 }
@@ -100,7 +109,6 @@ nav {
 .title_container h4 {
     color: #eee386;
     font-size: 22px;
-    margin-top: 20px;
     -webkit-animation: titleh 1.5s;
     -o-animation: titleh 1.5s;
     animation: titleh 1.5s;
@@ -125,10 +133,10 @@ nav {
     animation: titleinput 1.5s;
 }
 
-.about_me > p {
-    color: #f7dca2;
+.about_me>p {
+    color: #f7dca2 !important;
     font-size: 18px;
-    padding: 10px 500px;
+    
 
 }
 
@@ -136,16 +144,11 @@ nav {
     font-weight: bold;
     font-size: 30px;
     border-bottom: 5px solid red;
-    text-align: center;
-    margin: 100px 880px 100px 880px;
+    text-align: center;  
     color: #f7dca2;
     text-transform: uppercase;
-    padding-bottom: 20px;
+  
 
-}
-
-.about_me > img {
-    padding-left: 830px;
 }
 
 .about_me > input {
@@ -469,7 +472,8 @@ nav {
     transition: all 0.5s;
     color: #ecdb4f;
     transform: scale(1);
-    display: block
+    display: block;
+    text-decoration: none;
 }
 
 .menu li a:visited {
