@@ -54,7 +54,7 @@ nav {
     color: #ecdb4f;
     font-size: 25px;
     line-height: 60px;
-   
+
     float: left;
     -webkit-animation: comming 2s;
     -o-animation: comming 2s;
@@ -64,7 +64,7 @@ nav {
 
 .menu {
     float: left;
-    
+
 }
 
 .menu li {
@@ -101,7 +101,7 @@ nav {
     -webkit-animation: title 1.5s;
     -o-animation: title 1.5s;
     animation: title 1.5s;
-    
+
 
 
 }
@@ -133,10 +133,10 @@ nav {
     animation: titleinput 1.5s;
 }
 
-.about_me>p {
+.about_me > p {
     color: #f7dca2 !important;
     font-size: 18px;
-    
+
 
 }
 
@@ -144,10 +144,10 @@ nav {
     font-weight: bold;
     font-size: 30px;
     border-bottom: 5px solid red;
-    text-align: center;  
+    text-align: center;
     color: #f7dca2;
     text-transform: uppercase;
-  
+
 
 }
 
@@ -166,14 +166,13 @@ nav {
 
 .item_skills_background {
     background: url(../imj/drunkin%20doge.jpg) no-repeat center/cover;
-    
-    
+
+
     background-attachment: fixed;
 
 }
 
 .item_skills_background > h2 {
-    text-align: center;
     color: #f7dca2;
     padding: 50px 0px 20px 0px;
     text-transform: uppercase;
@@ -185,10 +184,9 @@ nav {
 
 .item_skills {
     font-size: 16px;
-    float: left;
     text-align: center;
     color: #f7dca2;
-    
+
 
 
 
@@ -202,18 +200,18 @@ nav {
     color: red;
     font-size: 18px;
     text-transform: uppercase;
-    
+
 }
 
 
 .cases {
     color: #f7dca2;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
 .cases > h2 {
-    font-size: 30px;
+    font-size: 20px;
     border-bottom: 5px solid red;
     text-align: center;
     margin: 100px 0px 20px 0px;
@@ -221,31 +219,21 @@ nav {
     text-transform: uppercase;
 }
 
-.cases > p {
-    text-align: center;
-    padding: 30px;
-}
-
-.cases > img {
-    margin-left: 360px;
-    padding-bottom: 15px;
-
-}
 
 .cases > h3 {
-    padding: 10px 0px 10px 360px;
-    font-size: 30px;
+    padding: 10px 0px;
+    font-size: 24px;
     text-transform: uppercase;
 }
 
 .cases > span {
-    padding: 10px 0px 10px 360px;
+    padding: 10px 0px;
 }
 
 .cases > input {
     border: 5px solid yellow;
     background: yellow;
-    margin: 10px 0px 10px 360px;
+    margin: 10px 0px;
     text-align: center;
     padding: 10px 20px;
     color: #2c0010;
@@ -255,23 +243,18 @@ nav {
     transition: all 0.5s;
 }
 
-.project_name {
-    margin: -225px 0px 0px 300px;
-}
-
 .cost_calculation > h2 {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    padding: 400px 0px 50px 0px;
-    margin-left: -360px;
+    padding: 150px 0px 50px 0px;
     text-transform: none
 }
 
 .cost_calculation {
     color: #f7dca2;
     font-size: 30px;
-    padding: 10px 0px 10px 360px;
+    padding: 10px 0px;
     text-transform: uppercase;
 }
 
@@ -279,7 +262,8 @@ nav {
     border: 5px solid #370014;
     background: #370014;
     color: #f7dca2;
-    padding: 15px 900px 15px 0px;
+    width: 100%;
+    padding: 15px 0px;
     margin-top: 10px;
     font-size: 20px;
     transition: all 0.3s;
@@ -288,58 +272,54 @@ nav {
 .time_cost {
     text-transform: none;
     border-top: 5px solid #370014;
-    margin: 10px 500px 10px 0px;
-    padding: 10px 0px 10px 0px;
+    margin: 10px 0px;
+    padding: 10px 0px;
 }
 
 .statistic_background {
     background: url(../imj/bg_stats.png) no-repeat center/cover;
     width: 100%;
-    height: 499px;
     margin: 70px 0px
 }
 
-.statistic_background > h2 {
-    font-size: 30px;
+.statistic > h2 {
+    font-size: 20px;
     color: #f7dca2;
     text-transform: uppercase;
-    text-align: center;
-    padding: 50px 0px 20px 0px;
+    padding: 10px 0px;
     border-bottom: 5px solid red;
-    margin: 0px 780px;
 
 
 }
 
 .statistic {
-    font-size: 20px;
+    font-size: 13px;
     color: #f7dca2;
-    float: left;
-    text-align: center;
-    padding: 50px 0px 10px 233px;
-    text-transform: uppercase
+
+    padding: 20px 0px;
+
 }
 
 .statistic > h3 {
-    font-size: 30px;
-    padding: 15px 0px;
+    font-size: 20px;
+    padding: 10px 0px;
+    text-transform: uppercase
 }
 
 .feedbacks > h2 {
-    font-size: 30px;
+    font-size: 20px;
     color: #f7dca2;
     text-transform: uppercase;
-    text-align: center;
     border-bottom: 5px solid red;
     padding-bottom: 20px;
-    margin: 30px 870px;
+    margin: 30px 0px;
 }
 
 .feedbacks {
     color: #f7dca2;
     text-align: center;
     font-size: 20px;
-    margin: 10px 0px 200px 0px;
+    margin: 10px 0px 100px 0px;
 }
 
 .feedbacks > img {
@@ -350,20 +330,17 @@ nav {
     padding: 10px 0px 30px 0px;
 }
 
-.contacts_bg > h2 {
-    font-size: 30px;
+.contacts_h2 > h2 {
     font-size: 30px;
     text-transform: uppercase;
-    text-align: center;
     border-bottom: 5px solid red;
     padding-bottom: 20px;
-    margin: 30px 830px;
+    margin: 30px 0px;
 }
 
 .contacts_bg {
     background: url(../imj/footer_bg.jpg) no-repeat center/cover;
-    width: 100%;
-    height: 808px;
+
     color: #2c0010;
 }
 
@@ -374,10 +351,8 @@ nav {
 
 .contacts_icons {
     font-size: 18px;
-    float: left;
-    text-align: center;
     color: #2c0010;
-    margin: 20px 0px 40px 335px;
+    margin: 20px 0px 40px 0px;
     transition: all 0.3s;
 
 }
@@ -390,19 +365,18 @@ nav {
     font-size: 25px;
     text-transform: uppercase;
     text-align: center;
-    padding: 230px 0px 30px 0px;
+    padding: 30px 0px;
 }
 
-#name {
-    margin-left: 610px
-}
+
 
 .contacts_name_Email > input {
     border: 5px solid #370014;
     background: #370014;
     color: #f7dca2;
-    margin: 10px 30px 20px 0px;
-    padding: 10px 176px 10px 0px;
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+    padding: 10px 0px;
     opacity: 0.8;
 }
 
@@ -411,39 +385,34 @@ nav {
     border: 5px solid #370014;
     background: #370014;
     color: #f7dca2;
-    margin-left: 610px;
-    padding-right: 330px;
+    width: 100%;
     opacity: 0.8;
 }
 
 .contacts > input {
-    text-align: center;
     border: 5px solid #370014;
     color: #370014;
     background: none;
     border-radius: 5px;
     font-size: 20px;
-    margin: 10px 0px 0px 890px;
+    margin: 10px 0px;
     padding: 6px 20px;
     transition: all 0.5s;
 }
 
 .contacts_links {
-    float: left;
-    padding: 20px 0px 47px 310px;
     transition: all 0.3s;
+    margin-bottom: 10px;
 }
 
-#leisters {
-    padding-left: 300px
-}
+
 
 #copyright {
     width 100%;
-    height: 90px;
+    height: 60px;
     background: #c40049;
     text-align: center;
-    line-height: 90px;
+    line-height: 60px;
     color: #ecdb4f;
     font-size: 20px;
 }
@@ -594,7 +563,7 @@ nav {
 }
 
 #button:hover {
-    margin-left: 610px;
+    
     padding: 6px 296px
 }
 
