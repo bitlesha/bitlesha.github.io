@@ -2,9 +2,13 @@
 
 
 
+let itog = [
+ 
+];
+
 let name = prompt("Привет, как тебя зовут");
 
-console.log(name);
+itog.push(name);
 
 let type = prompt(name + ", выбери тип сайта");
 
@@ -29,7 +33,7 @@ if (type == 6) {
     typePrice = " промо(15р)";
 };
 
-console.log(typePrice);
+itog.push(typePrice);
 
 let design = prompt("Отлично, теперь выбери дизайн");
 
@@ -51,7 +55,7 @@ if (design == 5){
     designPrice = " смешаный(??р)"
 };
 
-console.log(designPrice);
+itog.push(designPrice);
 
 let adapt = prompt("нужна ли тебе адаптивная вёрстка?");
 
@@ -60,11 +64,11 @@ if(adapt == 1){
     adaptPrice = " с адаптивной вёрсткой(20р)"
 };
 
-console.log(adaptPrice);
+itog.push(adaptPrice);
 
+console.log(itog);
 
 alert("Итак, "+name + ", ты выбрал тип сайта"+ typePrice+" и"+ designPrice+" дизайн"+adaptPrice);
-
 
 
 
