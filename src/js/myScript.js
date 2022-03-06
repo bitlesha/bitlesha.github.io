@@ -53,105 +53,28 @@ function onEntry(entry) {
 
 
 
-function raschitat() {
-    
-    let cena1;
-    let cena2;
-    let cena3;
+$('#raschitat').click(function () {
 
-    let vremya1;
-    let vremya2;
-    let vremya3;
-    
-    let type = document.getElementById('list1').value;
 
-    switch (type) {
-        case "opt1":
-            cena1 = 10;
-            vremya1 = 5;
-            break
-        case "opt2":
-            cena1 = 25;
-            vremya1 = 12.5;
-            break
-        case "opt3":
-            cena1 = 15;
-            vremya1 = 7.5;
-            break
-        case "opt4":
-            cena1 = 15;
-            vremya1 = 7.5;
-            break
-        case "opt5":
-            cena1 = 25;
-            vremya1 = 12.5;
-            break
-        case "opt6":
-            cena1 = 15;
-            vremya1 = 7.5;
-            break
-        default:
-            cena1 = 0;
-            vremya1 = 0;
-            break
-    }
 
-    let design = document.getElementById('list2').value;
+    let value1 = $('#list1').val();
+    let value2 = $('#list2').val();
+    let value3 = $('#list3').val();
 
-    switch (design) {
-        case "opt1":
-            cena2 = 10;
-            vremya2 = 5;
-            break
-        case "opt2":
-            cena2 = 11;
-            vremya2 = 5;
-            break
-        case "opt3":
-            cena2 = 12;
-            vremya2 = 5;
-            break
-        case "opt4":
-            cena2 = 13;
-            vremya2 = 5;
-            break
-        case "opt5":
-            cena2 = 14;
-            vremya2 = 5;
-            break
-        default:
-            cena = 0;
-            vremya = 0;
-            break
-    }
 
-    let adaptive = document.getElementById('list3').value;
-
-    switch (adaptive) {
-        case "opt1":
-            cena3 = 0;
-            vremya3 = 0;
-            break
-        case "opt2":
-            cena3 = 25;
-            vremya3 = 12.5;
-            break
-        default:
-            cena = 0;
-            vremya = 0;
-            break
-    }
-    if (type == 'opt0') {
+    if (value1 == 'opt1') {
         alert("ты не указал тип сайта")
-    } else if (design == 'opt0') {
+    } else if (value2 == 'opt2') {
         alert("ты не указал дизайн сайта")
-    } else if (adaptive == 'opt0') {
+    } else if (value3 == 'opt3') {
         alert("ты не указал нужна ли тебе адаптивная верстка")
     } else {
-        let time = vremya1 + vremya2 + vremya3;
-        document.getElementById('time').innerHTML = time;
 
-        let price = cena1+ cena2+ cena3;
-        document.getElementById('price').innerHTML = price;
+        $('#price').html('Стоимость: ' + (value1+ value2+ value3));
+
+
+
     }
-}
+
+
+});
