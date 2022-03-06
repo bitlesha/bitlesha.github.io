@@ -1,74 +1,151 @@
 "use strict"
 
+$(document).ready(function () {
+    $('.image-link').magnificPopup({
+        type: 'image'
+    });
+
+    let options = {
+        threshold: [1]
+    };
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = $('.numb_animation');
+    elements.each((i, el) => {
+        observer.observe(el);
+
+    })
 
 
-let itog = [
- 
-];
+    let option = {
+        threshold: [0.25]
+    };
+    let observ = new IntersectionObserver(onEntr, option);
+    let element = $('.image-load');
+    element.each((i, el) => {
+        observ.observe(el);
 
-let name = prompt("Привет, как тебя зовут");
+    })
 
-itog.push(name);
 
-let type = prompt(name + ", выбери тип сайта от (1 до 6)");
+});
 
-let typePrice = "0р ты не выбрал тип сайта";
 
-if (type == 1) {
-    typePrice = " визитка(10р)";
-};
-if (type == 2) {
-    typePrice = " корпоративный(15р)";
-};
-if (type == 3) {
-    typePrice = " портал(20р)";
-};
-if (type == 4) {
-    typePrice = " каталог(15р)";
-};
-if (type == 5) {
-    typePrice = " магазин(20р)";
-};
-if (type == 6) {
-    typePrice = " промо(15р)";
-};
+function onEntr(entry) {
+    entry.forEach(change => {
+        if (change.isIntersecting) {
+            change.target.src = change.target.dataset.src;
+        }
+    });
+}
 
-itog.push(typePrice);
 
-let design = prompt("Отлично, теперь выбери дизайн (от 1 до 5)");
-
-let designPrice = "0р чё без дизайна?";
-
-if (design == 1){
-    designPrice = " текстовый(15р)"
-};
-if (design == 2){
-    designPrice = " полиграфический(10р)"
-};
-if (design == 3){
-    designPrice = " интерфейсный(20р)"
-};
-if (design == 4){
-    designPrice = " динамический(20р)"
-};
-if (design == 5){
-    designPrice = " смешаный(??р)"
-};
-
-itog.push(designPrice);
-
-let adapt = prompt("нужна ли тебе адаптивная вёрстка? (1 это да, другие числа нет)");
-
-let adaptPrice = " без адаптивной вёрстки(0р)"
-if(adapt == 1){
-    adaptPrice = " с адаптивной вёрсткой(20р)"
-};
-
-itog.push(adaptPrice);
-
-console.log(itog);
-
-alert("Итак, "+name + ", ты выбрал тип сайта"+ typePrice+" и"+ designPrice+" дизайн"+adaptPrice);
+function onEntry(entry) {
+    entry.forEach(change => {
+        if (change.isIntersecting) {
+            change.target.classList.add('show-animation');
+        }
+    });
+}
 
 
 
+
+
+
+
+function raschitat() {
+
+    let cena;
+
+    let vremya;
+
+    let type = document.getElementById('list1').value;
+
+    switch (type) {
+        case "opt1":
+            cena = 10;
+            vremya = 5;
+            break
+        case "opt2":
+            cena = 25;
+            vremya = 12.5;
+            break
+        case "opt3":
+            cena = 15;
+            vremya = 7.5;
+            break
+        case "opt4":
+            cena = 15;
+            vremya = 7.5;
+            break
+        case "opt5":
+            cena = 25;
+            vremya = 12.5;
+            break
+        case "opt6":
+            cena = 15;
+            vremya = 7.5;
+            break
+        default:
+            cena = 0;
+            vremya = 0;
+            break
+    }
+
+    let design = document.getElementById('list2').value;
+
+    switch (design) {
+        case "opt1":
+            cena = 10;
+            vremya = 5;
+            break
+        case "opt2":
+            cena = 11;
+            vremya = 5;
+            break
+        case "opt3":
+            cena = 12;
+            vremya = 5;
+            break
+        case "opt4":
+            cena = 13;
+            vremya = 5;
+            break
+        case "opt5":
+            cena = 14;
+            vremya = 5;
+            break
+        default:
+            cena = 0;
+            vremya = 0;
+            break
+    }
+
+    let adaptive = document.getElementById('list3').value;
+
+    switch (adaptive) {
+        case "opt1":
+            cena = 0;
+            vremya = 0;
+            break
+        case "opt2":
+            cena = 25;
+            vremya = 12.5;
+            break
+        default:
+            cena = 0;
+            vremya = 0;
+            break
+    }
+    if (type == '') {
+        alert("ты не указал тип сайта")
+    } else if (design == '') {
+        alert("ты не указал дизайн сайта")
+    } else {
+        $('#time') = vremya(type) + vremya(design) + vremya(adaptive);
+        document.getElementById('time').innerHTML = time;
+
+        $('#price') = cena(type) + cena(design) + cena(adaptive);
+        document.getElementById('price').innerHTML = price;
+    }
+}

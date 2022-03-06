@@ -142,12 +142,12 @@ nav {
 
 .about_me h2 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     border-bottom: 5px solid red;
     text-align: center;
     color: #f7dca2;
     text-transform: uppercase;
-
+    margin-top: 70px;
 
 }
 
@@ -174,7 +174,7 @@ nav {
 
 .item_skills_background > h2 {
     color: #f7dca2;
-    padding: 50px 0px 20px 0px;
+    padding-top: 70px;
     text-transform: uppercase;
     font-size: 20px;
     border-bottom: 5px solid red;
@@ -214,8 +214,7 @@ nav {
     font-size: 20px;
     border-bottom: 5px solid red;
     text-align: center;
-    margin: 100px 0px 20px 0px;
-    padding-bottom: 20px;
+    margin: 70px 0px 20px 0px;
     text-transform: uppercase;
 }
 
@@ -286,7 +285,7 @@ nav {
     font-size: 20px;
     color: #f7dca2;
     text-transform: uppercase;
-    padding: 10px 0px;
+    padding-top: 10px;
     border-bottom: 5px solid red;
 
 
@@ -311,8 +310,7 @@ nav {
     color: #f7dca2;
     text-transform: uppercase;
     border-bottom: 5px solid red;
-    padding-bottom: 20px;
-    margin: 30px 0px;
+    margin: 70px 0px 30px 0px;
 }
 
 .feedbacks {
@@ -334,8 +332,7 @@ nav {
     font-size: 30px;
     text-transform: uppercase;
     border-bottom: 5px solid red;
-    padding-bottom: 20px;
-    margin: 30px 0px;
+    margin: 70px 0px;
 }
 
 .contacts_bg {
@@ -563,7 +560,7 @@ nav {
 }
 
 #button:hover {
-    
+
     padding: 6px 296px
 }
 
@@ -610,4 +607,24 @@ nav {
 
 #vk:hover {
     background: #0077FF;
+}
+
+.carousel-caption {
+    color: #f7dca2;
+}
+
+.carousel-item {
+    height: 500px;
+
+}
+
+.numb_animation {
+    opacity: 0;
+    margin-left: 300px;
+}
+
+.numb_animation.show-animation {
+    margin-left: 0;
+    opacity: 1;
+    transition: 1s;
 }
