@@ -54,11 +54,15 @@ function onEntry(entry) {
 
 
 function raschitat() {
+    
+    let cena1;
+    let cena2;
+    let cena3;
 
-    let cena;
-
-    let vremya;
-
+    let vremya1;
+    let vremya2;
+    let vremya3;
+    
     let type = document.getElementById('list1').value;
 
     switch (type) {
