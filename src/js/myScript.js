@@ -63,32 +63,32 @@ function raschitat() {
 
     switch (type) {
         case "opt1":
-            cena = 10;
-            vremya = 5;
+            cena1 = 10;
+            vremya1 = 5;
             break
         case "opt2":
-            cena = 25;
-            vremya = 12.5;
+            cena1 = 25;
+            vremya1 = 12.5;
             break
         case "opt3":
-            cena = 15;
-            vremya = 7.5;
+            cena1 = 15;
+            vremya1 = 7.5;
             break
         case "opt4":
-            cena = 15;
-            vremya = 7.5;
+            cena1 = 15;
+            vremya1 = 7.5;
             break
         case "opt5":
-            cena = 25;
-            vremya = 12.5;
+            cena1 = 25;
+            vremya1 = 12.5;
             break
         case "opt6":
-            cena = 15;
-            vremya = 7.5;
+            cena1 = 15;
+            vremya1 = 7.5;
             break
         default:
-            cena = 0;
-            vremya = 0;
+            cena1 = 0;
+            vremya1 = 0;
             break
     }
 
@@ -96,24 +96,24 @@ function raschitat() {
 
     switch (design) {
         case "opt1":
-            cena = 10;
-            vremya = 5;
+            cena2 = 10;
+            vremya2 = 5;
             break
         case "opt2":
-            cena = 11;
-            vremya = 5;
+            cena2 = 11;
+            vremya2 = 5;
             break
         case "opt3":
-            cena = 12;
-            vremya = 5;
+            cena2 = 12;
+            vremya2 = 5;
             break
         case "opt4":
-            cena = 13;
-            vremya = 5;
+            cena2 = 13;
+            vremya2 = 5;
             break
         case "opt5":
-            cena = 14;
-            vremya = 5;
+            cena2 = 14;
+            vremya2 = 5;
             break
         default:
             cena = 0;
@@ -125,12 +125,12 @@ function raschitat() {
 
     switch (adaptive) {
         case "opt1":
-            cena = 0;
-            vremya = 0;
+            cena3 = 0;
+            vremya3 = 0;
             break
         case "opt2":
-            cena = 25;
-            vremya = 12.5;
+            cena3 = 25;
+            vremya3 = 12.5;
             break
         default:
             cena = 0;
@@ -144,10 +144,10 @@ function raschitat() {
     } else if (adaptive == 'opt0') {
         alert("ты не указал нужна ли тебе адаптивная верстка")
     } else {
-        time = time, design, adaptive;
-        $(document).getElementById('time').innerHTML = time;
+        let time = vremya1 + vremya2 + vremya3;
+        document.getElementById('time').innerHTML = time;
 
-        price = cena(type) + cena(design) + cena(adaptive);
-        $(document).getElementById('price').innerHTML = price;
+        let price = cena1+ cena2+ cena3;
+        document.getElementById('price').innerHTML = price;
     }
 }
