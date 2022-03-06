@@ -137,15 +137,17 @@ function raschitat() {
             vremya = 0;
             break
     }
-    if (type == '') {
+    if (type == 'opt0') {
         alert("ты не указал тип сайта")
-    } else if (design == '') {
+    } else if (design == 'opt0') {
         alert("ты не указал дизайн сайта")
+    } else if (adaptive == 'opt0') {
+        alert("ты не указал нужна ли тебе адаптивная верстка")
     } else {
-        $('#time') = vremya(type) + vremya(design) + vremya(adaptive);
-        document.getElementById('time').innerHTML = time;
+        time = time, design, adaptive;
+        $(document).getElementById('time').innerHTML = time;
 
-        $('#price') = cena(type) + cena(design) + cena(adaptive);
-        document.getElementById('price').innerHTML = price;
+        price = cena(type) + cena(design) + cena(adaptive);
+        $(document).getElementById('price').innerHTML = price;
     }
 }
