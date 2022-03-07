@@ -49,33 +49,36 @@ function onEntry(entry) {
 
 
 
-
+let a = $('#list1').val();
+let b = $('#list2').val();
+let c = $('#list3').val();
+let abc
 
 
 
 $('#list1').on("change", function () {
+    
+    abc =+ a;
+    
+$('#pric').text('Стоимость: ' + +a);
+    
+
+});
 
 
+$('#list2').on("change", function () {
+    
+    abc =+ a;
 
-    var a = $('#list1').val();
-    var b = $('#list2').val();
-    var c = $('#list3').val();
+    $('#pric').text('Стоимость: ' + (+a+ +b+ +c));
 
-
-    if (a == '0') {
-        alert("ты не указал тип сайта")
-    } else if (b == '0') {
-        alert("ты не указал дизайн сайта")
-    } else if (c == '0') {
-        alert("ты не указал нужна ли тебе адаптивная верстка")
-    } else {
-        
-        $('#price').html('Стоимость: ' + (+a + +b + +c));
+});
 
 
+$('#list3').on("change", function () {
+    
+    abc =+ a;
 
-
-    }
-
+    $('#pric').text('Стоимость: ' + (+a+ +b+ +c));
 
 });
