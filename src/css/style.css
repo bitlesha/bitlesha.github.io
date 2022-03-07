@@ -270,9 +270,13 @@ nav {
 
 .time_cost {
     text-transform: none;
-    border-top: 5px solid #370014;
+
     margin: 10px 0px;
     padding: 10px 0px;
+}
+
+#bord {
+    border-top: 5px solid #370014;
 }
 
 #tim {
@@ -284,6 +288,7 @@ nav {
     color: #f7dca2;
     font-size: 30px;
 }
+
 .statistic_background {
     background: url(../imj/bg_stats.png) no-repeat center/cover;
     width: 100%;
