@@ -53,24 +53,25 @@ function onEntry(entry) {
 
 
 
-$('#raschitat').click(function () {
+$('#list1').on("change", function () {
 
 
 
-    let value1 = $('#list1').val();
-    let value2 = $('#list2').val();
-    let value3 = $('#list3').val();
+    var a = $('#list1').val();
+    var b = $('#list2').val();
+    var c = $('#list3').val();
 
 
-    if (value1 == 'opt1') {
+    if (a == '0') {
         alert("ты не указал тип сайта")
-    } else if (value2 == 'opt2') {
+    } else if (b == '0') {
         alert("ты не указал дизайн сайта")
-    } else if (value3 == 'opt3') {
+    } else if (c == '0') {
         alert("ты не указал нужна ли тебе адаптивная верстка")
     } else {
+        
+        $('#price').html('Стоимость: ' + (+a + +b + +c));
 
-        $('#price').html('Стоимость: ' + (value1+ value2+ value3));
 
 
 
