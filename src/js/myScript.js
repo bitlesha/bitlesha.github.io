@@ -49,36 +49,46 @@ function onEntry(entry) {
 
 
 
-let a = $('#list1').val();
-let b = $('#list2').val();
-let c = $('#list3').val();
-let abc
 
 
+
+
+
+let abc;
+
+let a;
 
 $('#list1').on("change", function () {
-    
-    abc =+ a;
-    
-$('#pric').text('Стоимость: ' + +a);
-    
+
+    a = $('#list1').val();
+
+    abc = +a;
+
+    $('#pric').text('Стоимость: ' + abc);
 
 });
 
+let b;
 
 $('#list2').on("change", function () {
-    
-    abc =+ a;
 
-    $('#pric').text('Стоимость: ' + (+a+ +b+ +c));
+    b = $('#list2').val();
+
+    abc = +a + +b;
+
+    $('#pric').text('Стоимость: ' + abc);
 
 });
 
+let c;
 
 $('#list3').on("change", function () {
-    
-    abc =+ a;
 
-    $('#pric').text('Стоимость: ' + (+a+ +b+ +c));
+    
+    c= $('#list3').val();
+
+    abc = +a + +b + +c;
+
+    $('#pric').text('Стоимость: ' + abc);
 
 });
