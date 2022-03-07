@@ -275,6 +275,15 @@ nav {
     padding: 10px 0px;
 }
 
+#tim {
+    color: #f7dca2;
+    font-size: 30px;
+}
+
+#pric {
+    color: #f7dca2;
+    font-size: 30px;
+}
 .statistic_background {
     background: url(../imj/bg_stats.png) no-repeat center/cover;
     width: 100%;
