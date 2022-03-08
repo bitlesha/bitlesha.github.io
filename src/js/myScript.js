@@ -55,7 +55,7 @@ function onEntry(entry) {
 
 
 let abc;
-let def;
+/*let def;*/
 
 let a;
 let d;
@@ -63,13 +63,13 @@ let d;
 $('#list1').on("change", function () {
 
     a = $('#list1').val();
-    d = $('#list1').days();
+    /*d = $('#list1')[days()];*/
 
     abc = +a;
-    def = +d;
+    /*def = +d;*/
 
     $('#pric').text('Стоимость: ' + abc);
-    $('#tim').text('Сроки: ' + def);
+    $('#tim').text('Сроки: ' + abc/2);
 
 });
 
@@ -79,13 +79,13 @@ let e;
 $('#list2').on("change", function () {
 
     b = $('#list2').val();
-    e = $('#list2').days();
+    /*e = $('#list2').days();*/
 
     abc = +a + +b;
-    def = +d + +e;
+    /*def = +d + +e;*/
 
     $('#pric').text('Стоимость: ' + abc);
-    $('#tim').text('Сроки: ' + def);
+    $('#tim').text('Сроки: ' + abc/2);
 
 });
 
@@ -95,12 +95,12 @@ let f;
 $('#list3').on("change", function () {
 
     c = $('#list3').val();
-    f = $('#list3').days();
+    /*f = $('#list3').days();*/
 
     abc = +a + +b + +c;
-    def = +d + +e + +f;
+    /*def = +d + +e + +f;*/
 
     $('#pric').text('Стоимость: ' + abc);
-    $('#tim').text('Сроки: ' + def);
+    $('#tim').text('Сроки: ' + abc/2);
 
 });
