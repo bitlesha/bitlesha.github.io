@@ -8,7 +8,7 @@
 
 body {
     font-family: 'frankling', sans-serif;
-    background-color: #2c0010
+    background-color: #f7f6f7
 }
 
 .preloader {
@@ -18,7 +18,7 @@ body {
     right: 0;
     bottom: 0;
     overflow: hidden;
-    background: #e51c23;
+    background: #e3ecfd;
     z-index: 1001;
 }
 
@@ -45,13 +45,13 @@ body {
 nav {
     width: 100%;
     height: 60px;
-    background: #c40049;
+    background: #f7f6f7;
     position: fixed;
     z-index: 4;
 }
 
 .logo {
-    color: #ecdb4f;
+    color: #778acd;
     font-size: 25px;
     line-height: 60px;
 
@@ -68,8 +68,8 @@ nav {
 .menu li {
     float: left;
     line-height: 60px;
-    color: #ecdb4f;
-    margin-right: 40px;
+    color: #778acd;
+    margin-right: 30px;
     font-size: 11px;
     text-transform: uppercase;
     -webkit-animation: falling 2s forwards;
@@ -80,21 +80,36 @@ nav {
 
 .main {
     width: 100%;
-    height: 640px;
-    background: url(../imj/gragas.png) 50% 150% no-repeat, url(../imj/background.jpg) no-repeat center/cover;
+    height: 100vh;
+    -webkit-animation: main 4s forwards;
+    -o-animation: main 4s forwards;
+    animation: main 4s forwards;
 
+
+}
+
+
+
+@keyframes main {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .title_container {
     float: left;
-    color: #ecdb4f;
+    color: #778acd;
     text-align: center;
     width: 100%;
 
 }
 
 .title_container h1 {
-    font-size: 72px;
+    font-size: 100px;
     font-weight: bold;
 
 
@@ -103,20 +118,29 @@ nav {
 }
 
 .title_container h4 {
-    color: #eee386;
-    font-size: 22px;
+    color: #778acd;
+    font-size: 40px;
 
 
 }
 
-.title_container input {
+.inpupu:hover {
+    background: #778acd;
+    color: #f7f6f7;
+}
+
+.inpupu:active {
+    transform: scale(0.9);
+}
+
+.inpupu {
     padding: 0px 10px;
     font-size: 20px;
-    color: #eee386;
+    color: #778acd;
     height: 40px;
     width: 130px;
     text-align: center;
-    border: 3px solid #eee386;
+    border: 3px solid #778acd;
     border-radius: 5px;
     background: none;
     margin: 30px 14px 0px 14px;
@@ -125,8 +149,13 @@ nav {
 
 }
 
+#about {
+    border-top: 10px groove darkgrey;
+    height: 100vh;
+}
+
 .about_me > p {
-    color: #f7dca2 !important;
+    color: #778acd !important;
     font-size: 18px;
 
 
@@ -135,9 +164,9 @@ nav {
 .about_me h2 {
     font-weight: bold;
     font-size: 20px;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid darkgrey;
     text-align: center;
-    color: #f7dca2;
+    color: #778acd;
     text-transform: uppercase;
     margin-top: 70px;
 
@@ -146,18 +175,23 @@ nav {
 .about_me > input {
     padding: 0px 10px;
     font-size: 20px;
-    border: 3px solid #f7dca2;
-    color: #f7dca2;
+    border: 3px solid #778acd;
+    color: #778acd;
     background: none;
     border-radius: 5px;
     height: 40px;
     width: 200px;
     transition: all 0.2s;
     transform: scale(1);
+    margin-bottom: 10px;
 }
+
+
+
 
 .item_skills_background {
     background: url(../imj/drunkin%20doge.jpg) no-repeat center/cover;
+
 
 
     background-attachment: fixed;
@@ -165,19 +199,20 @@ nav {
 }
 
 .item_skills_background > h2 {
-    color: #f7dca2;
+    color: #778acd;
     padding-top: 70px;
     text-transform: uppercase;
     font-size: 20px;
-    border-bottom: 5px solid red;
-    margin-bottom: 100px;
+    border-bottom: 5px solid darkgrey;
+    margin-bottom: 50px;
 
 }
 
 .item_skills {
     font-size: 16px;
     text-align: center;
-    color: #f7dca2;
+    color: #778acd;
+    margin-top: 25%;
 
 
 
@@ -189,22 +224,23 @@ nav {
 
 
 .item_skills > h3 {
-    color: red;
+    color: darkgrey;
     font-size: 18px;
     text-transform: uppercase;
 
 }
 
 
-.cases {
-    color: #f7dca2;
-    font-size: 18px;
 
+.cases {
+    color: #778acd;
+    font-size: 18px;
+    
 }
 
 .cases > h2 {
     font-size: 20px;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid darkgrey;
     text-align: center;
     margin: 70px 0px 20px 0px;
     text-transform: uppercase;
@@ -222,17 +258,19 @@ nav {
 }
 
 .cases > input {
-    border: 5px solid yellow;
-    background: yellow;
+    border: 5px solid #778acd;
+    background: #778acd;
     margin: 10px 0px;
     text-align: center;
     padding: 10px 20px;
-    color: #2c0010;
+    color: #f7f6f7;
     font-size: 30px;
     text-transform: uppercase;
     border-radius: 5px;
     transition: all 0.5s;
 }
+
+
 
 .cost_calculation > h2 {
     text-align: center;
@@ -243,16 +281,16 @@ nav {
 }
 
 .cost_calculation {
-    color: #f7dca2;
+    color: #778acd;
     font-size: 30px;
     padding: 10px 0px;
     text-transform: uppercase;
 }
 
 .cost_calculation > select {
-    border: 5px solid #370014;
-    background: #370014;
-    color: #f7dca2;
+    border: 5px solid #4e5980;
+    background: #4e5980;
+    color: #778acd;
     width: 100%;
     padding: 15px 0px;
     margin-top: 10px;
@@ -268,16 +306,16 @@ nav {
 }
 
 #bord {
-    border-top: 5px solid #370014;
+    border-top: 5px solid #4e5980;
 }
 
 #tim {
-    color: #f7dca2;
+    color: #4e5980;
     font-size: 30px;
 }
 
 #pric {
-    color: #f7dca2;
+    color: #4e5980;
     font-size: 30px;
 }
 
@@ -289,17 +327,17 @@ nav {
 
 .statistic > h2 {
     font-size: 20px;
-    color: #f7dca2;
+    color: #778acd;
     text-transform: uppercase;
     padding-top: 10px;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid darkgrey;
 
 
 }
 
 .statistic {
     font-size: 13px;
-    color: #f7dca2;
+    color: #778acd;
 
     padding: 20px 0px;
 
@@ -313,14 +351,14 @@ nav {
 
 .feedbacks > h2 {
     font-size: 20px;
-    color: #f7dca2;
+    color: #778acd;
     text-transform: uppercase;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid darkgrey;
     margin: 70px 0px 30px 0px;
 }
 
 .feedbacks {
-    color: #f7dca2;
+    color: #778acd;
     text-align: center;
     font-size: 20px;
     margin: 10px 0px 100px 0px;
@@ -337,14 +375,14 @@ nav {
 .contacts_h2 > h2 {
     font-size: 30px;
     text-transform: uppercase;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid darkgrey;
     margin: 70px 0px;
 }
 
 .contacts_bg {
     background: url(../imj/footer_bg.jpg) no-repeat center/cover;
 
-    color: #2c0010;
+    color: #f7f6f7;
 }
 
 .contacts_bg > p {
@@ -354,7 +392,7 @@ nav {
 
 .contacts_icons {
     font-size: 18px;
-    color: #2c0010;
+    color: #f7f6f7;
     margin: 20px 0px 40px 0px;
     transition: all 0.3s;
 
@@ -374,9 +412,9 @@ nav {
 
 
 .contacts_name_Email > input {
-    border: 5px solid #370014;
-    background: #370014;
-    color: #f7dca2;
+    border: 5px solid #4e5980;
+    background: #4e5980;
+    color: #f7f6f7;
     width: 100%;
     margin: 10px 0px 20px 0px;
     padding: 10px 0px;
@@ -385,16 +423,16 @@ nav {
 
 .contacts_name_Email > textarea {
     resize: none;
-    border: 5px solid #370014;
-    background: #370014;
-    color: #f7dca2;
+    border: 5px solid #4e5980;
+    background: #4e5980;
+    color: #f7f6f7;
     width: 100%;
     opacity: 0.8;
 }
 
 .contacts > input {
-    border: 5px solid #370014;
-    color: #370014;
+    border: 5px solid #f7f6f7;
+    color: #f7f6f7;
     background: none;
     border-radius: 5px;
     font-size: 20px;
@@ -403,37 +441,29 @@ nav {
     transition: all 0.5s;
 }
 
-.contacts_links {
-    transition: all 0.3s;
-    margin-bottom: 10px;
-}
-
 
 
 #copyright {
     width 100%;
     height: 60px;
-    background: #c40049;
+    background: #f7f6f7;
     text-align: center;
     line-height: 60px;
-    color: #ecdb4f;
+    color: #778acd;
     font-size: 20px;
 }
 
 .menu li a {
     transition: all 0.5s;
-    color: #ecdb4f;
+    color: #778acd;
     transform: scale(1);
     display: block;
     text-decoration: none;
 }
 
-.menu li a:visited {
-    color: #ecdb4f;
-}
 
 .menu li a:hover {
-    color: red;
+    color: darkgrey;
 
 }
 
@@ -441,14 +471,7 @@ nav {
     transform: scale(1.1)
 }
 
-.title_container input:hover {
-    background: #eee386;
-    color: black
-}
 
-.title_container input:active {
-    transform: scale(0.9)
-}
 
 .animate__animated.animate__flipInX {
     --animate-duration: 3s;
@@ -499,8 +522,8 @@ nav {
 }
 
 .about_me input:hover {
-    background: #f7dca2;
-    color: #2c0010;
+    background: #778acd;
+    color: #f7f6f7;
 }
 
 .about_me input:active {
@@ -526,16 +549,16 @@ nav {
 }
 
 .contacts_name_Email input:focus {
-    border-color: white;
-    background: white;
-    color: indianred;
+    border-color: #778acd;
+    background: #778acd;
+    color: #f7f6f7;
 
 }
 
 .contacts_name_Email textarea:focus {
-    border-color: white;
-    background: white;
-    color: indianred;
+    border-color: #778acd;
+    background: #778acd;
+    color: #f7f6f7;
 }
 
 #button:hover {
@@ -548,48 +571,11 @@ nav {
     color: white;
 }
 
-.contacts_links:active {
-    margin-top: -10px
-}
-
-#facebook {
-    transition: all 0.5s;
-}
-
-#facebook:hover {
-    background: #3b5998;
-}
-
-#twitter {
-    transition: all 0.5s;
-}
-
-#twitter:hover {
-    background: #00acee;
-}
-
-#insta {
-    transition: all 0.5s;
-}
-
-#insta:hover {
-
-    background: -webkit-linear-gradient(45deg, rgba(255, 223, 158, 1) 0%, rgba(255, 223, 158, 1) 17%, rgba(229, 105, 105, 1) 44%, rgba(193, 85, 139, 1) 75%, rgba(138, 73, 161, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
 
 
-}
-
-#vk {
-    transition: all 0.5s;
-}
-
-#vk:hover {
-    background: #0077FF;
-}
 
 .carousel-caption {
-    color: #f7dca2;
+    color: #778acd;
 }
 
 .carousel-item {

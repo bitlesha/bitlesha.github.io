@@ -1,6 +1,9 @@
 "use strict"
 
 $(document).ready(function () {
+    
+
+    
     $('.image-link').magnificPopup({
         type: 'image'
     });
@@ -18,8 +21,9 @@ $(document).ready(function () {
     new WOW().init();
 
     $("#phone_1").mask("8(99) 999-9999");
+   
 
-    $('form').subbmit(function (event) {
+    $('form').submit(function (event) {
         event.preventDefault();
 
         $.ajax({
@@ -35,6 +39,7 @@ $(document).ready(function () {
         return false;
 
     });
+
 
 
 });
@@ -105,3 +110,4 @@ $('#list3').on("change", function () {
     $('#tim').text('Сроки: ' + abc / 2);
 
 });
+
