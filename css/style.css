@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'frankling', sans-serif;
+    font-family: 'frankling';
     background-color: #f7f6f7
 }
 
@@ -151,7 +151,43 @@ nav {
 
 #about {
     border-top: 10px groove darkgrey;
-    height: 100vh;
+    height: auto;
+    color: #778acd;
+}
+
+
+.resume {
+    font-size: 16px;
+}
+
+.resume__title{
+    font-size: 36px;
+    text-align: center;
+}
+
+.info {
+    font-size: 12px;
+    color: #6b7599;
+}
+
+.resume__block {
+    font-size: 18px;
+    color: darkgrey;
+    border-bottom: 1px solid darkgrey;
+    margin-top: 25px;
+    margin-bottom: 7px;
+}
+
+.resume__salary {
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.resume-education__name_small {
+    font-weight: inherit;
+    font-size: 12px;
+    margin-left: 25px;
 }
 
 .about_me > p {
