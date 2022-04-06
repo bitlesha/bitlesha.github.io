@@ -1,20 +1,12 @@
 "use strict"
 
 $(document).ready(function () {
+    
+
+    
     $('.image-link').magnificPopup({
         type: 'image'
     });
-
-    let options = {
-        threshold: [1]
-    };
-    let observer = new IntersectionObserver(onEntry, options);
-    let elements = $('.numb_animation');
-    elements.each((i, el) => {
-        observer.observe(el);
-
-    })
-
 
     let option = {
         threshold: [0.25]
@@ -26,6 +18,29 @@ $(document).ready(function () {
 
     })
 
+    new WOW().init();
+
+    $("#phone_1").mask("8(99) 999-9999");
+   
+
+    $('form').submit(function (event) {
+        event.preventDefault();
+
+        $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            alert("Сообщение отправлено");
+            $("form").trigger("reset");
+
+        });
+        return false;
+
+    });
+
+
 
 });
 
@@ -34,15 +49,6 @@ function onEntr(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
             change.target.src = change.target.dataset.src;
-        }
-    });
-}
-
-
-function onEntry(entry) {
-    entry.forEach(change => {
-        if (change.isIntersecting) {
-            change.target.classList.add('show-animation');
         }
     });
 }
@@ -69,7 +75,7 @@ $('#list1').on("change", function () {
     /*def = +d;*/
 
     $('#pric').text('Стоимость: ' + abc);
-    $('#tim').text('Сроки: ' + abc/2);
+    $('#tim').text('Сроки: ' + abc / 2);
 
 });
 
@@ -85,7 +91,7 @@ $('#list2').on("change", function () {
     /*def = +d + +e;*/
 
     $('#pric').text('Стоимость: ' + abc);
-    $('#tim').text('Сроки: ' + abc/2);
+    $('#tim').text('Сроки: ' + abc / 2);
 
 });
 
@@ -101,6 +107,7 @@ $('#list3').on("change", function () {
     /*def = +d + +e + +f;*/
 
     $('#pric').text('Стоимость: ' + abc);
-    $('#tim').text('Сроки: ' + abc/2);
+    $('#tim').text('Сроки: ' + abc / 2);
 
 });
+
