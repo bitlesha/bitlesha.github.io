@@ -208,8 +208,9 @@ nav {
 
 }
 
-.about_me > input {
-    padding: 0px 10px;
+.about_me > a {
+  
+    padding: 1px 20px;
     font-size: 20px;
     border: 3px solid #778acd;
     color: #778acd;
@@ -219,7 +220,7 @@ nav {
     width: 200px;
     transition: all 0.2s;
     transform: scale(1);
-    margin-bottom: 10px;
+    text-decoration: none;
 }
 
 
@@ -557,12 +558,12 @@ nav {
     --animate-duration: 1.5s;
 }
 
-.about_me input:hover {
+.about_me a:hover {
     background: #778acd;
     color: #f7f6f7;
 }
 
-.about_me input:active {
+.about_me a:active {
     transform: scale(0.9)
 }
 
